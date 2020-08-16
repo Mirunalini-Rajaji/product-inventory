@@ -1,20 +1,20 @@
 
-    
 
-    const clickName = function clickFirstName(state = null, action){
-        
-        switch (action.type) {
-            case "First_Name":
-               
-                return action.payload
-             
-        
-            default:
-                break;
-        }
-    
-       return state
-    
+
+const clickName = function clickFirstName(state = null, action) {
+
+    switch (action.type) {
+        case "First_Name":
+
+            return action.payload
+
+
+        default:
+            break;
     }
-    
-    export default clickName
+
+    return state
+
+}
+
+export default clickName

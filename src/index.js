@@ -11,9 +11,9 @@ const reduxStore = createStore(allReducers)
 console.log(reduxStore);
 console.log("Store is created....");
 
-ReactDOM.render( 
+ReactDOM.render(
   <Provider store={reduxStore}>
-      <App />
-  </Provider> ,
+    <App />
+  </Provider>,
   document.getElementById('root')
 );

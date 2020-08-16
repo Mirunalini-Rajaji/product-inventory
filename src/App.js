@@ -8,14 +8,14 @@ import Detail from './containers/detail';
 function App() {
   return (
     <div >
-     <FirstName></FirstName>
-     <hr></hr>
-     <LastName></LastName>
-     <hr></hr>
-     <Score></Score>
-     <hr></hr>
-     <Detail></Detail>    
-      
+      <FirstName></FirstName>
+      <hr></hr>
+      <LastName></LastName>
+      <hr></hr>
+      <Score></Score>
+      <hr></hr>
+      <Detail></Detail>
+
     </div>
   );
 }

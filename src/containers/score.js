@@ -1,22 +1,22 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import clickScore from '../actions/clickScore';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 class Score extends React.Component {
-    state = {  }
-    render() { 
-        return ( 
+    state = {}
+    render() {
+        return (
             <div>
                 Score:
-                <input type="number" onChange={(e)=>this.props.clickScore(e.target.value)}></input>
+                <input type="number" onChange={(e) => this.props.clickScore(e.target.value)}></input>
             </div>
-         );
+        );
     }
 }
- function dispatchToProps(dispatch){
-     return bindActionCreators({
-         clickScore:clickScore
-     },dispatch)
- }
-export default connect(null,dispatchToProps) (Score);
+function dispatchToProps(dispatch) {
+    return bindActionCreators({
+        clickScore: clickScore
+    }, dispatch)
+}
+export default connect(null, dispatchToProps)(Score);
